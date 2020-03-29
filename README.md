@@ -7,7 +7,7 @@ Data are provided by https://covid-self-report.ch/
 | header | What |
 |---|---|
 | date | Date  |
-| locator | Postal code |
+| postal_code | Postal code |
 | latitude | latitude |
 | longitude | longitude |
 | healthy | Total of persons who report an "healty" status |
