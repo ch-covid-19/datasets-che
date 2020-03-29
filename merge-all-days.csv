@@ -1,4 +1,4 @@
-date,locator,latitude,longitude,healthy,sick_guess_no_corona,sick_guess_corona,sick_corona_confirmed,recovered_confirmed,recovered_not_confirmed
+date,postal_code,latitude,longitude,healthy,sick_guess_no_corona,sick_guess_corona,sick_corona_confirmed,recovered_confirmed,recovered_not_confirmed
 2020-03-25,1012,46.5263,6.6569,24,2,1,0,0,1
 2020-03-25,1097,46.4933,6.7357,4,0,1,0,0,0
 2020-03-25,1009,46.5092,6.662,32,0,4,1,0,2
