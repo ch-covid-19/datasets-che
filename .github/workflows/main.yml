@@ -1,0 +1,28 @@
+on:
+    schedule:
+        - cron: '0 * * * *'
+
+jobs:
+    aggregate:
+        runs-on: ubuntu-latest
+        name: Automatic datasets generation
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+            - name: aggregation
+              uses: ch-covid-19/data-github-action@master
+              with:
+                  daily_export_json_url: https://europe-west1-pandemia-57e48.cloudfunctions.net/daily_json
+                  daily_export_json_token: ${{ secrets.read_token }}
+                  geo_locations_csv_url: https://raw.githubusercontent.com/ch-covid-19/geo-locations/master/data/che/che_geocoding.csv
+                  daily_report_name: 'daily-changes/{date}.csv'
+            - name: Commit changes
+              run: |
+                  git config --local user.email "guillaume.hochet@gmail.com"
+                  git config --local user.name "ovesco"
+                  git add .
+                  git commit -m "performed automatic datasets generation"
+            - name: Push changes
+              uses: ad-m/github-push-action@master
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
