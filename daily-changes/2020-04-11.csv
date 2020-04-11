@@ -1,3 +1,5 @@
 date,postal_code,healthy,sick_guess_no_corona,sick_guess_corona,sick_corona_confirmed,recovered_confirmed,recovered_not_confirmed
-2020-04-11,1213,0,0,1,0,0,0
-2020-04-11,1350,0,0,1,0,0,0
+2020-04-11,1196,46.4237,6.2652,1,0,0,0,0,0
+2020-04-11,1213,46.1856,6.1091,1,0,0,0,0,0
+2020-04-11,1350,46.7246,6.533,1,0,0,0,0,0
+2020-04-11,1996,46.1875,7.3019,1,0,0,0,0,0
