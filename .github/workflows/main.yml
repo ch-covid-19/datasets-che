@@ -18,8 +18,8 @@ jobs:
                   daily_report_name: 'daily-changes/{date}.csv'
             - name: Commit changes
               run: |
-                  git config --local user.email "nicolas.uffer@gmail.com"
-                  git config --local user.name "nuffer"
+                  git config --local user.email "dataset_bot@gmail.com"
+                  git config --local user.name "datasets_che"
                   git add .
                   git commit -m "performed automatic datasets generation"
             - name: Push changes
