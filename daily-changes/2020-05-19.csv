@@ -1,1 +1,2 @@
 date,postal_code,latitude,longitude,healthy,sick_guess_no_corona,sick_guess_corona,sick_corona_confirmed,recovered_confirmed,recovered_not_confirmed
+2020-05-19,1610,46.5701,6.8165,1,0,0,0,0,0
